@@ -1,0 +1,119 @@
+# diff all
+
+# version
+# Betaflight / MATEKF722 (MKF7) 3.3.3 Nov 30 2018 / 12:21:01 (d370a68) MSP API: 1.38
+
+# reset configuration to default settings
+defaults nosave
+
+# name
+name neuroflight
+
+# resources
+resource MOTOR 1 C08
+resource MOTOR 2 C06
+resource MOTOR 3 C09
+resource MOTOR 4 C07
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature AIRMODE
+
+# beeper
+beeper -RX_LOST
+beeper -RX_LOST_LANDING
+beeper -RX_SET
+
+# map
+
+# serial
+serial 0 1024 115200 57600 0 115200
+serial 2 32 115200 57600 0 115200
+serial 3 16384 115200 57600 0 115200
+serial 4 8192 115200 57600 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 1300 2075 0
+aux 1 1 1 900 1700 0
+aux 2 13 2 1300 2075 0
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# master
+set gyro_sync_denom = 2
+set acc_hardware = NONE
+set mag_hardware = NONE
+set baro_hardware = NONE
+set rssi_channel = 16
+set motor_pwm_protocol = DSHOT600
+set osd_vbat_pos = 2049
+set osd_rssi_pos = 2073
+set osd_crosshairs_pos = 2285
+set osd_craft_name_pos = 2058
+set debug_mode = GYRO_RAW
+set vtx_band = 5
+set vtx_power = 2
+set vtx_freq = 5658
+
+# profile
+profile 0
+
+
+# profile
+profile 1
+
+
+# profile
+profile 2
+
+
+# restore original profile selection
+profile 0
+
+# rateprofile
+rateprofile 0
+
+
+# rateprofile
+rateprofile 1
+
+
+# rateprofile
+rateprofile 2
+
+
+# rateprofile
+rateprofile 3
+
+
+# rateprofile
+rateprofile 4
+
+
+# rateprofile
+rateprofile 5
+
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
